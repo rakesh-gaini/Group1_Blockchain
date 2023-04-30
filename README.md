@@ -4,7 +4,7 @@ Steps to execute
 To conduct any experiment download the code files and upload them onto Remix IDE. 
 
 # Experiment 1
-** PoS **
+**PoS
 * Deploy the contract CarbonCreditTrading_PoS.sol 
 	* Sub Inputs: initialCredits(Credits for the owner), minStake(Minimum stake for any validator to participate) 
 * To update the balance of the owner of the contract(To transfer the credits to a buyer at later stage) use mintCarbonCredits() 
