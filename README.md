@@ -3,7 +3,7 @@ Steps to execute
 
 To conduct any experiment download the code files and upload them onto Remix IDE. 
 
-Experiment 1
+#Experiment 1
 	PoS
 Deploy the contract CarbonCreditTrading_PoS.sol 
 Inputs: initialCredits(Credits for the owner), minStake(Minimum stake for any validator to participate) 
