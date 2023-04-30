@@ -4,7 +4,7 @@ Steps to execute
 To conduct any experiment download the code files and upload them onto Remix IDE. 
 
 # Experiment 1
-**PoS
+**PoS**
 * Deploy the contract CarbonCreditTrading_PoS.sol 
 	* Sub Inputs: initialCredits(Credits for the owner), minStake(Minimum stake for any validator to participate) 
 * To update the balance of the owner of the contract(To transfer the credits to a buyer at later stage) use mintCarbonCredits() 
@@ -20,7 +20,7 @@ To conduct any experiment download the code files and upload them onto Remix IDE
 	* Sub Inputs: from address(address of the sender), to address (address of the receiver), amount(amount of carbon credits to be transferred), msg.value(ethers to transfer)
 	* Sub Updates the carbon credits balance of buyer, seller, and the buy and sell transaction counts in the contract, and transfers ethers from buyer to seller
 
-** PoW
+**PoW
 * Deploy the contract PoW.sol
 	* Sub Inputs: The amount of carbon credits available and the price per credit
 * To buy buy carbon credits use buyCarbonCredits(uint amount)
