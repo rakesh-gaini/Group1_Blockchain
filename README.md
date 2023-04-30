@@ -1,4 +1,5 @@
-# Group1_Blockchain
+# Carbon Credit Ecosystem
+
 Steps to execute
 
 To conduct any experiment download the code files and upload them onto Remix IDE. 
