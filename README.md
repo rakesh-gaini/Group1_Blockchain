@@ -6,7 +6,7 @@ To conduct any experiment download the code files and upload them onto Remix IDE
 # Experiment 1
 **PoS
 * Deploy the contract CarbonCreditTrading_PoS.sol 
-	*Inputs: initialCredits(Credits for the owner), minStake(Minimum stake for any validator to participate) 
+	* Sub Inputs: initialCredits(Credits for the owner), minStake(Minimum stake for any validator to participate) 
 * To update the balance of the owner of the contract(To transfer the credits to a buyer at later stage) use mintCarbonCredits() 
 To update the stake values of individual accounts use updateBalance(address toAddr)
 Updates the balance with 20
