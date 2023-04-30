@@ -3,11 +3,11 @@ Steps to execute
 
 To conduct any experiment download the code files and upload them onto Remix IDE. 
 
-#Experiment 1
-	PoS
-Deploy the contract CarbonCreditTrading_PoS.sol 
-Inputs: initialCredits(Credits for the owner), minStake(Minimum stake for any validator to participate) 
-To update the balance of the owner of the contract(To transfer the credits to a buyer at later stage) use mintCarbonCredits() 
+# Experiment 1
+** PoS **
+* Deploy the contract CarbonCreditTrading_PoS.sol 
+	*Inputs: initialCredits(Credits for the owner), minStake(Minimum stake for any validator to participate) 
+* To update the balance of the owner of the contract(To transfer the credits to a buyer at later stage) use mintCarbonCredits() 
 To update the stake values of individual accounts use updateBalance(address toAddr)
 Updates the balance with 20
 To participate in the validation use stakeCryptocurrency(address fromAddr, uint stake) public 
@@ -20,7 +20,7 @@ To sell carbon credits to another user use the function sellCarbonCredits(addres
 Inputs: from address(address of the sender), to address (address of the receiver), amount(amount of carbon credits to be transferred), msg.value(ethers to transfer)
 Updates the carbon credits balance of buyer, seller, and the buy and sell transaction counts in the contract, and transfers ethers from buyer to seller
 
-PoW
+** PoW **
 Deploy the contract PoW.sol
 Inputs: The amount of carbon credits available and the price per credit
 To buy buy carbon credits use buyCarbonCredits(uint amount)
@@ -31,7 +31,7 @@ Inputs: The number of credits you want to sell
 submitProofOfWork(bytes32 hash, uint difficulty)
 Input: Provide a hash and set a difficulty for the puzzle you want the miners to solve. The carbon credit trading will happen only after the puzzle is solved.
 
-Experiment 2
+# Experiment 2
 Deploy the contract CarbonCreditTrading.sol
 Inputs: initialCredits(Credits for the owner), minStake(Minimum stake for any validator to participate)
 Collect the address of the side chain contract from addr variable
@@ -40,7 +40,7 @@ Input the above collected address of side chain
 Order of execution is similar to above process of PoS from experiment 1, only difference is that the methods are triggered from the main contract MainChain.sol
 
 
-Experiment 3 (Integer Overflow)
+# Experiment 3 (Integer Overflow)
 Deploy the contract
 To add balance in the contract use deposit function 
 Provide an integer as an input
@@ -48,7 +48,7 @@ To withdraw balance from the contract use withdraw function
 Provide an integer as an input
 
 
-Experiment 4
+# Experiment 4
 
 This includes the experiment with the implementation of a bridge, side chain and main chain.
 Deploy the contract CarbonCreditTrading_PoS.sol 
@@ -68,5 +68,5 @@ The unlock asset function requires a lockId for the asset, all parts of the priv
 The buy and sell functionality is similar to the above functionalities.
 
 
-Graphs
+** Graphs **
 For the graphs code to execute, download the csv files into the local machine and provide the absolute file path in the pd1.read_csv(“<path>”) placeholder and execute.
